@@ -1,0 +1,2973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'von Tienda Online</title>
+</head>
+<body>
+    <div class="container-loading-animation">
+        <div class="spinner"></div>
+
+        <div id="txt-loading">Bienvenido a D'von Tienda Online</div>
+     </div>
+     <div id="demo-modal" class="modal">
+         <div class="modal__content">
+            <img src="media/productos/photo_2023-01-25_07-26-10.jpg" alt="modal">
+             <a href="#" class="modal__close">&times;</a>
+         </div>
+     </div>
+    <div class="container">
+        <header class="container-header">
+            <div class="container-logo_header">
+                <img class="title-logo" src="media/logo1.png" alt="D'von logo">
+            </div>
+            <nav id="nav" class="nav_header">
+                <div class="container-item_nav">
+                    <ul class="ul-item">
+                        <li class="li-item"><a href="#productos">Productos</a></li>
+                        <li class="li-item"><a href="#sobreNosotros">sobre nosotros</a></li>
+                        <li class="li-item"><a href="#contactanos">contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="container-menu_header">
+                    <button type="button" id="button-menu" class="button-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </button>
+                </div>
+                    <div class=" container-carrito_header container-icon">
+                        <div class="container-cart-icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="icon-cart"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                                />
+                            </svg>
+                            <div class="count-products">
+                                <span "id="contador-productos">0</span>
+                            </div>
+                        </div>
+        
+                        <div class="container-cart-products hidden-cart">
+                            <div class="row-product hidden">
+                                <div class="cart-product ">
+                                    <div class="info-cart-product">
+                                        <button type="button"class="cantidad-producto-carrito">1</button>
+                                        <p class="titulo-producto-carrito">Zapatos Nike</p>
+                                        <button type="button"class="precio-producto-carrito">$80</button>
+                                    </div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="icon-close"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+        
+                            <div class="cart-total hidden">
+                                <h3>Total:</h3>
+                                <button type="button"class="total-pagar">$200</button>
+                            </div>
+                            <p class="cart-empty">El carrito está vacío</p>
+                            <p class="hidden"></p>
+                        </div>
+                    </div>    
+                    <div class="container-menu">
+                        <div id="menu_nav" class="menu_nav">
+                            <div class="ul-container_menu">
+                                <ul class="ul-resposive">
+                                    <li class="item-li "><a href="#productos">Productos</a></li>
+                                    <li class="item-li"><a href="#sobreNosotros">sobre nosotros</a></li>
+                                    <li class="item-li"><a href="#contactanos">contactanos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+            </nav>
+        </header>
+        <main class="container-main">
+            <section class="container-banner" id="banner">
+                <div class="container-txt_banner">
+                    <h2>Bienvenido A Nuestra Tienda Online</h2>
+                    <h3>Todo lo que buscas en un solo lugar</h3>
+                </div>
+                <div class="container-img_banner">
+                    <img  src="media/banner.png" alt="banner">
+                </div>
+                <svg preserveAspectRatio ="none" class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="whitesmoke" fill-opacity="1" d="M0,0L60,37.3C120,75,240,149,360,149.3C480,149,600,75,720,85.3C840,96,960,192,1080,208C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            </section>
+            <section class="container-productos_main" id="productos">
+                <div class="title-productos_main">
+                    <h2>- Productos -</h2>  
+                </div>
+                <div class="container-filtros">
+                    <button class="button-filtros" type="button" id="todo"><img src="media/new-house-svgrepo-com.svg" alt="todo icono" class="icon-filtro"><span>todo</span></button>
+                    <button class="button-filtros" type="button" id="Electronicos"><img src="media/headphones-svgrepo-com.svg" alt="icono" class="icon-filtro"><span>Electronicos</span></button>
+                    <button class="button-filtros" type="button" id="belleza"><img src="media/beauty-salon-svgrepo-com.svg" alt="icono" class="icon-filtro"><span>belleza</button></span>
+                    <button class="button-filtros" type="button" id="ropa"><img src="media/pijama-svgrepo-com.svg" alt="icono" class="icon-filtro"><span>ropa</span></button>
+                    <button class="button-filtros" type="button" id="zapatos"><img src="media/boot-shoe-footwear-svgrepo-com.svg" alt="icono" class="icon-filtro"><span>zapatos</span></button>
+                    <button class="button-filtros" type="button" id="bolsos"><img src="media/backpack-svgrepo-com.svg" alt="icono" class="icon-filtro"><span>bolsos</span></button>
+                    <button class="button-filtros" type="button" id="Accesorios"><img src="media/jewelry-store-svgrepo-com.svg" alt="icono" class="icon-filtro"><span>Accesorios</span></button>
+                    <button class="button-filtros" type="button" id="decoracion"><img src="media/team-group-svgrepo-com.svg" alt="icono" class="icon-filtro"><span>Decoracion</span></button>
+                        </div>
+                    <div class="container-items">
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-55-08.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Usb Lampara</h2>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-58-26.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Boquilla De Ducha Rotable</h2>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo Reloj accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_23-01-54.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Set Para Hombres</h2>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_23-03-05.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Imperniable Portable </h2>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo Belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_23-05-53.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Cuchilla Para Cejas</h2>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_23-07-25.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Adaptador USB A Typo C</h2>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-22_23-36-54.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Brazalete</h2>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-22_23-39-34.jpg"
+                                    alt="producto"
+                                />
+                                <img class="img-product watch-img tipo2 "
+                                src="media/productos/photo_2023-01-22_23-40-02.jpg"
+                                alt="producto"
+                            />
+                            <img class="img-product watch-img tipo3"
+                            src="media/productos/photo_2023-01-22_23-40-29.jpg"
+                            alt="producto"
+                            />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Set De Anillos</h2>
+                                <div class="colors">
+                                    <button type="button"class="color negro" id="tipo1"></button>
+                                    <button type="button"class="color arcoiris" id="tipo2"></button>
+                                    <button type="button"class="color dorado" id="tipo3"></button>
+                                </div>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-22_23-41-46.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>2Ps Mini Destornillador</h2>
+                                <h3>Todo Los Colores Disponibles</h3>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios ropa">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-22_23-47-07 (2).jpg"
+                                    alt="producto"
+                                
+                                />
+                                <img class="img-product watch-img tipo2 "
+                                src="media/productos/photo_2023-01-22_23-47-07.jpg"
+                                alt="producto"
+                                
+                            />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Sudadera Para Brazos</h2>
+                                <div class="colors">
+                                    <button type="button" class="color negro" id="tipo1"></button>
+                                    <button type="button" class="color blanco" id="tipo2"></button>
+                                </div>
+                                <p class="price">$2</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-22_23-48-52.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Corta Papas</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-22_23-50-07.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cinta De Doble cara</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-22_23-52-04.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Gel Blanqueador De Dientes</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-22_23-56-15.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Utencilo para Cocina</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-22_23-57-28.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Eyeliner multicolores</h2>
+                            <h3>Diferentes colores</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-36-58.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Kit Facial De Removedor De Cejas</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-37-47.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Medidas De Tobillos</h2>
+                            <h3>Todo Los Colores Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-41-54.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>100 pz De Luminosas Estrellas</h2>
+                            <h3>Todo Los Colores Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorio">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-43-46.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>100 pz De Copos De Nieve</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorio">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-46-30.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>1pz Mini Destonillador</h2>
+                            <h3>Todo Los Colores Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorio">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-47-27.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>15pz Dolares Miniatura </h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorio">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-49-53.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Mini Navaja De Bolsillo</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-50-55.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>LED Usb portable</h2>
+                            <h3>Todo Los Colores Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_20-53-06.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>1ps De Cinta Luminosa</h2>
+                            <h3>Todo Los Colores Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-23_20-56-50.jpg"
+                                    alt="producto"
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-23_20-58-15.jpg"
+                                alt="producto" 
+                            />
+                            </figure>
+                            <div class="info-product">
+                            <h2>kit De Accesorio</h2>
+                             <div class="colors">
+                                    <button type="button" class="color arcoiris" id="tipo1"></button>
+                                    <button type="button" class="color dorado" id="tipo2"></button>
+                                </div>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-23_21-02-12.jpg"
+                                    alt="producto"
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-23_21-03-58.jpg"
+                                alt="producto"
+                            />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Lentes Polarizados</h2>
+                             <div class="colors">
+                                    <button type="button" class="color amarillo" id="tipo1"></button>
+                                    <button type="button" class="color azul" id="tipo2"></button>
+                                </div>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-03-58 (2).jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Lentes Para Sol </h2>
+                            <h3>Todos Los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-05-47.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cepillo Facial Doble cara</h2>
+                            <h3>todos Los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-09-30.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Medias cortas de Oso</h2>
+                            <h3>Todos los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-23_21-10-15.jpg"
+                                    alt="producto"
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-23_21-11-01.jpg"
+                                alt="producto"
+                            />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Anillos Para Dedos Del Pie</h2>
+                            <h3>Todos Los Modelos Disponibles</h3>
+                            <div class="colors">
+                                <button type="button"class="color arcoiris" id="tipo1"></button>
+                                <button type="button"class="color dorado" id="tipo2"></button>
+                            </div>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-11-48.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cepillos De Dientes</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-14-26.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>50ps Colas Para El Pelo</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-28-00.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>4ps Cepillos De Dientes</h2>
+                            <h3>Todos Los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo decoracion">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-29-24.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Toallero De Baño</h2>
+                            <h3>Todo Los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-32-26.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>10ps De Pinchos Para Comida</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo untesilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-35-03.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Base para Jabon</h2>
+                            <h3>Todos Los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo Decoracion">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-41-28.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cortina De Luces</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-43-28.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Rejilla Removible</h2>
+                            <h3>Varios Colores Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-46-27.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Silenciador Para Puertas</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo decoracion">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-46-27.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>2ps De Ganchos</h2>
+                            <h3>Varios Colores Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo decoracion">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-50-59.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>1/4/6/12 Ps De Ganchos metalicos</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo decoracion">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-54-59.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Base Doble Para Jabones</h2>
+                            <h3>Varios Colores Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_21-59-41.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Utencilio Para Ajos Multiusos</h2>
+                            <h3>Varios Colores Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_22-01-06.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cuchillo De Cocina</h2>
+                            <h3>Varios Colores Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure> 
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-23_22-03-34.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Multifuncional Gancho De Ropa Largo</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo decoracion utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-40-13.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>3 Ps Forros Para Pocetas</h2>
+                            <h3>Varios Colores Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo decoracion utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-42-08.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Bolsa De Almacenamiento</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo decoracion">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-45-02.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Papel Decorativo Para Cocinas</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-45-02.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Expremidor De Crema Para Dientes</h2>
+                            <h3>Varios Colores Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-46-22.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Exprimidor De Crema Dental</h2>
+                            <h3>Varios Colores Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-50-08.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Estuche para Cepillos De Dientes</h2>
+                            <h3>Varios Colores Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorio">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-52-01.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>1000 Ps Frutas de Arcilla</h2>
+                            <h3>Varios Colores Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-54-54.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product belleza">
+                            <h2>Adesivo Para Uñas</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-56-41.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>28 Ps De Uñas Postizas </h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_06-58-30.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>1 Pack De Peines para Bebes</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-00-30.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Limpieza Facial</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-24_07-02-15.jpg"
+                                    alt="producto"
+                                  
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-24_07-02-35.jpg"
+                                alt="producto"
+                              
+                            />
+                                <img class="img-product watch-img tipo3"
+                                    src="media/productos/photo_2023-01-24_07-02-55.jpg"
+                                    alt="producto"
+                                    
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cadena De Colores</h2>
+                            <div class="colors">
+                                <button type="button"class="color blanco" id="tipo1"></button>
+                                <button type="button"class="color dorado" id="tipo2"></button>
+                                <button type="button"class="color amarillo" id="tipo3"></button>
+                            </div>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-03-32.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Jabon Facial</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-05-00.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>500 Ps De Uñas De Acrilico</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-06-21.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Estuches De Viajes Para Maquillaje</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-07-39.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Bolso de viaje</h2>
+                            <h3>Todo Los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-10-37.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cartera Suave De Animales</h2>
+                            <h3>Todos Los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-11-31.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Colchon quita maquillaje</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-14-10.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Recortador Cejas</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-15-42.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>caja de almacenamiento de joyas</h2>
+                            <h3>Todos Los Modelos Disponibles</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorio">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-19-19.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cigarro Falso</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-22-24.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Bolso De Gatos</h2>
+                            <h3>Todos Los Modelos Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        v
+                        <div class="item todo bolsos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-24-10.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cartera De Animales</h2>
+                            <h3>Todos Los Modelos Disponible</h3>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo1672848212.jpeg"
+                                    alt="producto"
+                                />
+
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo1672849312.jpeg"
+                                alt="producto"
+                            />
+                            <img class="img-product watch-img tipo3"
+                            src="media/productos/photo1672849266.jpeg"
+                            alt="producto"
+                        />
+                        <img class="img-product watch-img tipo4"
+                        src="media/productos/photo1672849236.jpeg"
+                        alt="producto"
+                    />
+                       </figure>
+                            <div class="info-product">
+                                <h2>Audifonos Bluetooh</h2>
+                                <div class="colors">
+                                    <button type="button"class="color beige" id="tipo1"></button>
+                                    <button type="button"class="color azul" id="tipo2"></button>
+                                    <button type="button"class="color rosado" id="tipo3"></button>
+                                    <button type="button"class="color morado" id="tipo4"></button>
+                                </div>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672848962.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Ventilador de bolsillo 3 en 1como banco de energía,soporte para teléfono,ventilador de mano</h2>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672849927.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>1 ps microfono movil mini</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672850238.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>1 ps microfono de solapa</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="item todo eletronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672850811.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Micrófono Lavalier compatible con iphone</h2>
+                                <p class="price">$26</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672851494.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>1 ps portable impresora</h2>
+                                <p class="price">$40</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672852114.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Indoor E27 campera segurity</h2>
+                                <p class="price">$40</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672852504.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>2 Camera E27 3MP 1296P resolucion</h2>
+                                <p class="price">$120</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672852862.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>mini Lavadora portable</h2>
+                                <p class="price">$110</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672853169.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>mini Lavadora de 10L </h2>
+                                <p class="price">$70</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672854158.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Mini Plancha de 180° rotable </h2>
+                                <p class="price">$40</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672854191.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Mini Plancha </h2>
+                                <p class="price">$30</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672854558.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Micrófono Con Soporte Multiusos </h2>
+                                <p class="price">$30</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672883709.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2> Hair Curler Automatico portable</h2>
+                                <p class="price">$45</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                         <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673464027.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Licuadora Portalble </h2>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672885417.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>mini Licuador electrico </h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672885267.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Mini Licuador Electrico Para Cafes</h2>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672885626.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Rociador Reciclave para perfumes</h2>
+                                <p class="price">$5</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672886960.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Hair Curler automatico ajustable</h2>
+                                <p class="price">$70</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672887412.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Impresora de calcomanias </h2>
+                                <p class="price">$170</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672922283.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Hair curling Automatico de 3 tubos </h2>
+                                <p class="price">$39</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672923020.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Peina Anti Friz 4 En 1 </h2>
+                                <p class="price">$50</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672925146.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Afitadora De Nariz Portatil </h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672925799.jpeg "
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Rasudadora Electrica Adaptable 6 en 1 </h2>
+                                <p class="price">$45</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672925359.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Joyrero De Bolsillo De Vidrio</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos ">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1672925446.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Conversor De Unidades variados Y Portable </h2>
+                                <p class="price">$25</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673463544.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Mini Aire Acondicionado Portable </h2>
+                                <p class="price">$80</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673463758.jpeg "
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Repelente de Insectos ultrasonico</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673463973.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Lampara De Led</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                            <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673464176.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Estampadora De Gemas Para El Cabello</h2>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673464419.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Rizadador Electrico</h2>
+                                <p class="price">$15</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673464691.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Hielera De Silicon</h2>
+                                <p class="price">$18</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673464693.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                        </figure>
+                            </figure>
+                            <div class="info-product">
+                                <h2>Pijama Para Mujer tipo lenceria </h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo6 tipo7"
+                                    src="media/productos/photo1673465306.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo1673465518.jpeg"
+                                alt="producto"
+                                
+                            />
+                            <img class="img-product watch-img tipo3"
+                            src="media/productos/photo1673465563.jpeg"
+                            alt="producto"
+                            
+                        />
+                        <img class="img-product watch-img tipo4"
+                        src="media/productos/photo1673465567.jpeg"
+                        alt="producto"
+                        
+                    />
+                    <img class="img-product watch-img tipo5"
+                    src="media/productos/photo1673465571.jpeg"
+                    alt="producto"
+                    
+                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Pijama Para Mujer </h2>
+                                <div class="colors">
+                                    <button type="button"class="color rojo" id="tipo1"></button>
+                                    <button type="button"class="color beige" id="tipo2"></button>
+                                    <button type="button"class="color morado" id="tipo3"></button>
+                                    <button type="button"class="color azul" id="tipo4"></button>
+                                    <button type="button"class="color negro" id="tipo5"></button>
+                                </div>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673466151.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Pijama Para Mujer De Rayas</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673466144.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Vestido De Noche Con Corazones</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673466406.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Pijama Para Mujer Con Forma De Donas </h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673466537.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Pijama Para Mujer De corazones </h2>
+                                <p class="price">$14</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673466732.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Pijama Para Mujer De flores </h2>
+                                <p class="price">$14</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673466862.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Vestido De Noche </h2>
+                                <p class="price">$14</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673467015 (1).jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Pijama Para Mujer De Coronas </h2>
+                                <p class="price">$14</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673791535.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Caja De Decoracion Para Uñas</h2>
+                                <h3>3500 Piesas</h3>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos decoracion">
+                            <figure>
+                                <img class="img-product watch-img show tipo1"
+                                    src="media/productos/photo1673791920.jpeg"
+                                    alt="producto"
+                                    
+                                />
+
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo1673792030.jpeg"
+                                alt="producto"
+                                
+                                />
+
+                                <img class="img-product watch-img tipo3"
+                                src="media/productos/photo1673792078.jpeg"
+                                alt="producto"
+                                
+                                />
+
+                                <img class="img-product watch-img tipo4"
+                                src="media/productos/photo1673792136.jpeg"
+                                alt="producto"
+                                
+                                />
+
+                                <img class="img-product watch-img tipo5"
+                                src="media/productos/photo1673792167.jpeg"
+                                alt="producto"
+                                
+                                />
+
+                                <img class="img-product watch-img tipo6"
+                                    src="media/productos/photo1673792192.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo7"
+                                src="media/productos/photo1673792217.jpeg"
+                                alt="producto"
+                                id="gris"
+                                />
+
+                            </figure>
+                            <div class="info-product">
+                                <h2>Juego de Sabanas para Cama</h2>
+                                <div class="colors">
+                                    <button type="button"class="color rosado" id="tipo1"></button>
+                                    <button type="button"class="color beige" id="tipo2"></button>
+                                    <button type="button"class="color blanco" id="tipo3"></button>
+                                    <button type="button"class="color marron" id="tipo4"></button>
+                                    <button type="button"class="color rojo" id="tipo5"></button>
+                                    <button type="button"class="color negro" id="tipo6"></button>
+                                    <button type="button"class="color gris" id="tipo7"></button>
+                                </div>
+                                <p class="price">$95</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo decoracion">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo1673792263.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                    src="media/productos/photo1673792382.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Alfombra</h2>
+                                <div class="colors">
+                                    <button type="button"class="color azul" id="tipo1"></button>
+                                    <button type="button"class="color arcoiris" id="tipo2"></button>
+                                </div>
+                                <p class="price">$15</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo1673792468.jpeg"
+                                    alt="producto"
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo1673792527.jpeg"
+                                alt="producto"
+                            />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Gorra con texturizado </h2>
+                                <div class="colors">
+                                    <button type="button"class="color negro" id="tipo1"></button>
+                                    <button type="button"class="color beige" id="tipo2"></button>
+                                </div>
+                                <h3>Todo Los Modelos Dispobiles</h3>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673792585.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Gorra Con Texturizado De Rayas</h2>
+                                <h3>Todo Los Colores Disponible</h3>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo1673792751.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                    src="media/productos/photo1673792777.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Gorra Casual </h2>
+                                <div class="colors">
+                                    <button type="button"class="color negro" id="tipo1"></button>
+                                    <button type="button"class="color rosado" id="tipo2"></button>
+                                </div>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673792994.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Gorrade De Cuero</h2>
+                                <h3>Dos Colores Disponibles</h3>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673793115.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Gorra Para Mujeres</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo1673812762.jpeg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                    src="media/productos/photo1673812797.jpeg"
+                                    alt="producto"
+                                     
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Gorra Deportiva </h2>
+                                <div class="colors">
+                                    <div class="color dorado" id="tipo1"></div>
+                                    <div class="color negro" id="tipo2"></div>
+                                </div>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673814133.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Gorra con texturizado De Rayas </h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673814260.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>32ps Protector De Silla </h2>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo1673814397.jpeg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2> 32ps Protector Para Sillas de Silicon   </h2>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-16_13-56-02.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>E88 Rc Camara Dron 4k HD </h2>
+                                <p class="price">$50</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-16_14-36-09.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>S91 Doble Camara Dron 4k HD </h2>
+                                <p class="price">$40</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-16_14-41-49.jpg"
+                                    alt="producto"
+                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-16_14-42-31.jpg"
+                                alt="producto"
+                
+                            />
+                            <img class="img-product watch-img tipo3"
+                            src="media/productos/photo_2023-01-16_14-43-20.jpg"
+                            alt="producto"
+        
+                        />
+                        <img class="img-product watch-img tipo4"
+                        src="media/productos/photo_2023-01-16_14-43-46.jpg"
+                        alt="producto"
+            
+                    />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Digital tipo casio</h2>
+                                <div class="colors">
+                                    <button type="button"class="color rosado" id="tipo1"></button>
+                                    <button type="button"class="color dorado" id="tipo2"></button>
+                                    <button type="button"class="color negro" id="tipo3"></button>
+                                    <button type="button"class="color plateado" id="tipo4"></button>
+                                </div>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos reloj">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"                            
+                                src="media/productos/photo_2023-01-16_14-45-16.jpg"
+                                alt="producto"
+                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-16_14-46-47.jpg"
+                                alt="producto"
+                    
+                                />
+                                <img class="img-product watch-img tipo3"
+                                src="media/productos/photo_2023-01-16_14-47-32.jpg"
+                                alt="producto"
+                    
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Digital Deportivo</h2>
+                                <div class="colors">
+                                    <button type="button"class="color rosado" id="tipo1"></button>
+                                    <button type="button"class="color blanco" id="tipo2"></button>
+                                    <button type="button"class="color dorado" id="tipo3"></button>
+                                </div>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos reloj">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-16_14-48-36.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Digital Estudiantil</h2>
+                                <h3>Todos Los Modelos Disponibles</h3>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos reloj">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-16_14-50-46.jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-16_14-51-52.jpg"
+                                alt="producto"
+                                
+                            />
+                            <img class="img-product watch-img tipo3"
+                            src="media/productos/photo_2023-01-16_14-52-30.jpg"
+                            alt="producto"
+                            
+                        />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Digital tipo Rolex</h2>
+                                <div class="colors">
+                                    <button type="button"class="color rosado" id="tipo1"></button>
+                                    <button type="button"class="color plateado" id="tipo2"></button>
+                                    <button type="button"class="color dorado" id="tipo3"></button>
+                                </div>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos reloj">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-16_14-53-08.jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-16_14-54-29.jpg"
+                                alt="producto"
+                                
+                            />
+                            <img class="img-product watch-img tipo3"
+                            src="media/productos/photo_2023-01-16_14-54-31.jpg"
+                            alt="producto"
+                            
+                        />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Correa Para Telefono Inteligente</h2>
+                                <div class="colors">
+                                    <button type="button"class="color negro" id="tipo1"></button>
+                                    <button type="button"class="color marron" id="tipo2"></button>
+                                    <button type="button"class="color plateado" id="tipo3"></button>
+                                </div>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos reloj">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-16_14-55-45.jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2 "
+                                src="media/productos/photo_2023-01-16_14-58-53.jpg"
+                                alt="producto"
+                                
+                                 />
+                                 <img class="img-product watch-img tipo3"
+                                 src="media/productos/photo_2023-01-16_14-59-13.jpg"
+                                 alt="producto"
+                                 
+                                />
+                                <img class="img-product watch-img tipo4"
+                                src="media/productos/photo_2023-01-16_14-59-15.jpg"
+                                alt="producto"
+                                
+                                />
+                                <img class="img-product watch-img tipo5"
+                                src="media/productos/photo_2023-01-16_14-59-19.jpg"
+                                alt="producto"
+                                
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Correas Para Reloj inteligente Samsung</h2>
+                                <div class="colors">
+                                    <button type="button"class="color negro" id="tipo1"></button>
+                                    <button type="button"class="color azul" id="tipo2"></button>
+                                    <button type="button"class="color blanco" id="tipo3"></button>
+                                    <button type="button"class="color verde" id="tipo4"></button>
+                                    <button type="button"class="color marron" id="tipo5"></button>
+                                </div>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo reloj">
+                            <figure>
+                                <img class="img-product"
+                                src="media/productos/photo_2023-01-16_15-00-25.jpg"
+                                alt="producto"
+                            />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Formal</h2>
+                                <h3>Todos Los Modelos Disponibles</h3>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo reloj">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"
+                                src="media/productos/photo_2023-01-16_15-02-09.jpg"
+                                alt="producto"
+                                
+                                
+                            />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-16_15-03-04.jpg"
+                                alt="producto"
+                                
+                            />
+                                <img class="img-product watch-img tipo3"
+                                src="media/productos/photo_2023-01-16_15-03-25.jpg"
+                                alt="producto"
+                                id="amarillo"
+                            />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Digital Unisex</h2>
+                                <div class="colors">
+                                    <button type="button"class="color morado" id="tipo1"></button>
+                                    <button type="button"class="color negro" id="tipo2"></button>
+                                    <button type="button"class="color dorado" id="tipo3"></button>
+                                </div>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo reloj">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-16_15-05-49.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Formal Para Mujeres</h2>
+                                <h3>Todos Los Modelos Disponibles</h3>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo reloj">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-16_15-06-23.jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-16_15-07-25.jpg"
+                                alt="producto"
+                            
+                                />
+                                <img class="img-product watch-img tipo3"
+                                src="media/productos/photo_2023-01-16_15-08-12.jpg"
+                                alt="producto"
+                                
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Para Hombres Deportivo</h2>
+                                <div class="colors">
+                                    <button type="button"class="color negro" id="tipo1"></button>
+                                    <button type="button"class="color marron" id="tipo2"></button>
+                                    <button type="button"class="color verde" id="tipo3"></button>
+                                </div>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div> 
+                        </div>
+                        <div class="item todo reloj">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-16_15-11-36.jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-16_15-12-25.jpg"
+                                alt="producto"
+                        
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Formal Geneva</h2>
+                                <div class="colors">
+                                    <button type="button"class="color plateado" id="tipo1"></button>
+                                    <button type="button"class="color dorado" id="tipo2"></button>
+                                </div>
+                                <p class="price">$12</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo reloj">
+                            <figure>
+                                <img class="img-product"
+                                src="media/productos/photo_2023-01-16_15-13-33.jpg"
+                                alt="producto"
+                               
+                            />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Formal </h2>
+                                <p class="price">$12</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo reloj">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo5 tipo6 tipo7"
+                                src="media/productos/photo_2023-01-19_18-33-59.jpg"
+                                alt="producto"
+                                
+                            />
+                            <img class="img-product watch-img tipo2"
+                            src="media/productos/photo_2023-01-19_18-35-20.jpg"
+                            alt="producto"
+                        
+                        />
+                            <img class="img-product watch-img tipo3"
+                                src="media/productos/photo_2023-01-19_18-36-11.jpg"
+                                alt="producto"
+                                
+                            />
+                            <img class="img-product watch-img tipo4"
+                                src="media/productos/photo_2023-01-19_18-36-14.jpg"
+                                alt="producto"
+                            />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Disney</h2>
+                                <div class="colors">
+                                    <button type="button"class="color rosado" id="tipo1"></button>
+                                    <button type="button"class="color negro" id="tipo2"></button>
+                                    <button type="button"class="color plateado" id="tipo3"></button>
+                                    <button type="button"class="color rojo" id="tipo4"></button>
+                                </div>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos reloj">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_18-39-44.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Correa Para Reloj Inteligentes</h2>
+                                <h3>Todos Los Modelos Disponible</h3>
+                                <p class="price">$8</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_18-40-16.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Maquillaje Movo</h2>
+                                <p class="price">$6</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_18-43-49.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Jogger </h2>
+                                <p class="price">$30</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_18-45-22.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Pantalo De Mujer De Rayas</h2>
+                                <p class="price">$25</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_18-48-49.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Leggins Gris </h2>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_18-51-40.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Correa Para Mujer</h2>
+                                <h3>Todo Los Modelos Disponibles</h3>
+                                <p class="price">$6</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_18-53-26.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Correa texturizao</h2>
+                                <h3>Todo Los Modelos Disponibles</h3>
+                                <p class="price">$6</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_18-54-38.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Correa Para Mujer</h2>>
+                                <h3>Todos Los Modelos Disponibles</h3>
+                                <p class="price">$6</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_19-00-08.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Polvo De hada Highlighter</h2>
+                                <h3>Varios Colores</h3>
+                                <p class="price">$12</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_19-02-29.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Correa Para Mujer Con Brillo</h2>
+                                <h3>Todos Los Modelos Disponibles</h3>
+                                <p class="price">$6</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_19-04-54.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Bolso De Viaje Multiusos</h2>
+                                <h3>Todos Los Modelos Disponibles</h3>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_19-06-24.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Bolso en Forma de Corazon</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo reloj">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-21-02.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Reloj Transparente</h2>
+                                <h3>Todos Los Modelos Disponibles/h3>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-21-26.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Paraguas Automatico Con LED</h2>
+                                <p class="price">$35</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-19_22-23-44.jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-19_22-23-45.jpg"
+                                alt="producto"
+                                
+                            />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Medias Altas Con Lazo</h2>
+                                <div class="colors">
+                                    <button type="button"class="color rojo" id="tipo1"></button>
+                                    <button type="button"class="color verde" id="tipo2"></button>
+                                </div>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo ropa">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-24-58.jpg"
+                                    alt="producto"
+                                    
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Medias Altas De Arcoiris</h2>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-30-36.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Mini Nevera Para Skin Care</h2>
+                                <p class="price">$90</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-32-14.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Cartera De Cuero</h2>
+                                <h3>Todo Los Modelos Disponibles</h3>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-34-24 (2).jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Impresora Para Estampados</h2>
+                                <p class="price">$20</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-35-46.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Lavadora</h2>
+                                <p class="price">$85</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-37-36.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Caja De Dinero Para tortas</h2>
+                                <p class="price">$15</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-43-05.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Mascara Para Dormir</h2>
+                                <h3>Distintos Modelos</h3>
+                                <p class="price">$5</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-46-44.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Mascara Para Dormir De Rana</h2>
+                                <p class="price">$5</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorio">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-19_22-46-45.jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img tipo2"
+                                src="media/productos/photo_2023-01-19_22-46-47.jpg"
+                                alt="producto"
+                                
+                            />
+                            <img class="img-product watch-img tipo3"
+                            src="media/productos/photo_2023-01-19_22-47-37.jpg"
+                            alt="producto"
+                            
+                        />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Cartera Elegante</h2>
+                                <div class="colors">
+                                    <button type="button"class="color verde" id="tipo1"></button>
+                                    <button type="button"class="color negro" id="tipo2"></button>
+                                    <button type="button"class="color blanco" id="tipo3"></button>
+                                </div>
+                                <p class="price">$15</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-19_22-48-47.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                                <h2>Funda Para Telefonos</h2>
+                                <h3>Todo Modelos Disponibles</h3>
+                                <p class="price">$10</p>
+                                <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo electronicos">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_07-27-25.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Herramienta De Grabado</h2>
+                            <p class="price">$10</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo belleza">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_11-34-07.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>polvo compacto de plátano</h2>
+                            <h3>Todo Disponible</h3>
+                            <p class="price">$5</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_11-37-33.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Tienda impermeable</h2>
+                            <p class="price">$40</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-24_11-40-35.jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product watch-img  tipo2"
+                                src="media/productos/photo_2023-01-24_11-44-19.jpg"
+                                alt="producto"
+                                
+                            />
+                            <img class="img-product watch-img  tipo3"
+                            src="media/productos/photo_2023-01-24_11-44-20.jpg"
+                            alt="producto"
+                            
+                        />
+                        <img class="img-product watch-img  tipo4"
+                        src="media/productos/photo_2023-01-24_11-45-48.jpg"
+                        alt="producto"
+                        
+                    />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Protector Para Telefono</h2>
+                            <div class="colors">
+                                <button type="button"class="color verde" id="tipo1"></button>
+                                <button type="button"class="color negro" id="tipo2"></button>
+                                <button type="button"class="color morado" id="tipo3"></button>
+                                <button type="button"class="color rosado" id="tipo4"></button>
+                            </div>
+                            <p class="price">$10</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo4 tipo5 tipo6 tipo7"
+                                src="media/productos/photo_2023-01-24_11-45-48 (2).jpg"
+                                alt="producto"
+                                
+                            />
+                            <img class="img-product watch-img tipo2"
+                            src="media/productos/photo_2023-01-24_11-45-49.jpg"
+                            alt="producto"
+                            id="amarrillo"
+                        />
+                        <img class="img-product watch-img tipo3"
+                            src="media/productos/photo_2023-01-24_11-47-00.jpg"
+                            alt="producto"
+                            
+                        />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Lentes De Sol Aesthetic</h2>
+                            <div class="colors">
+                                <button type="button"class="color rojo" id="tipo1"></button>
+                                <button type="button"class="color amarillo" id="tipo2"></button>
+                                <button type="button"class="color negro" id="tipo3"></button>
+                            </div>
+                            <p class="price">$10</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_11-47-00 (2).jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Mosquitero</h2>
+                            <p class="price">$25</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product watch-img show tipo1 tipo3 tipo4 tipo5 tipo6 tipo7"
+                                    src="media/productos/photo_2023-01-24_11-55-37 (2).jpg"
+                                    alt="producto"
+                                    class=""
+                                />
+                                <img class="img-product watch-img tipo2"
+                                    src="media/productos/photo_2023-01-24_11-55-37.jpg"
+                                    alt="producto"
+                                    
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Lentes Retro</h2>
+                            <div class="colors">
+                                <button type="button"class="color negro" id="tipo1"></button>
+                                <button type="button"class="color blanco" id="tipo2"></button>
+                            </div>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_11-55-37 (3).jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>7ps De Pilas AA USB Recargables</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_12-00-16.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>8ps De Pilas AA USB Recargables</h2>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_11-55-38.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Riñonera Protectora Para Niños</h2>
+                            <p class="price">$15</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo utensilios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_12-01-09.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Esponja Body Shower</h2>
+                            <p class="price">$8</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_12-05-59.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cangurera Para Bebes</h2>
+                            <p class="price">$20</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo bolsos accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-24_12-06-04.jpg"
+                                    alt="producto"
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Cangurera Para Bebes De Estrellas</h2>
+                            <p class="price">$25</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div class="item todo accesorios">
+                            <figure>
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-25_07-26-10 (2).jpg"
+                                    alt="producto"
+                                    
+                                />
+                                <img class="img-product"
+                                    src="media/productos/photo_2023-01-25_07-26-10.jpg"
+                                    alt="producto"
+                                    
+                                />
+                            </figure>
+                            <div class="info-product">
+                            <h2>Forro Para Iphone 14>
+                            <p class="price">$2</p>
+                            <button type="button"class="btn-add-cart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                </div>
+
+                <button type="button"class="ver-mas">ver mas productos</button>
+                <button type="button"class="ver-mas ver-menos">ver menos productos</button>
+            </section>
+            <section class=".container-aliados_main">
+                <h2 class="title-aliados">- Alidados Comerciales -</h2>
+                <div class="aliados">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo-700x394.png" alt="logo de marca" class="aliados-item">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Air-Jordan-Logo.png" alt="logo de marca" class="aliados-item">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Adidas-Logo.png" alt="logo de marca" class="aliados-item">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Ralph-Lauren-Logo.png" alt="" class="aliados-item">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Supreme-Logo.png" alt="logo de marca" class="aliados-item">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Louis-Vuitton-Logo.png" alt="logo de marca" class="aliados-item">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Puma-Logo.png" alt="logo de marca" class="aliados-item">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/HM-Logo.png" alt="logo de marca" class="aliados-item">
+                    
+                </div>  
+            </section>
+            <section class="container-subcripcion">
+                <div class="wrapper">
+                    <form action="#" class="card-content">
+                      <div class="container-sub">
+                        <div class="image">
+                          <img src="media/mail-svgrepo-com.svg" alt="" srcset="">
+                        </div>
+                        <h2>Subscribete</h2>
+                        <p>Subscribe para estar actualizado con nuestras ultimas promociones y anuncion.</p>
+                      </div>
+                      <div class="form-input">
+                        <label for="email"></label>
+                        <input type="email" placeholder="Su Email">
+                        <button type="button"class="subscribe-btn">Subscribirse</button>
+                      </div>
+                    </form>
+                  </div>
+            </section>
+            <section class="sobre-nosotros_main" id="sobreNosotros">
+                <h2 class="title-sn">- Sobre nosotros -</h2>
+                <div class="container-txt_sn">
+                    <p>¡Hola! Soy Ivon Rodriguez creadora de D'von, hecha con sueños metas por cumplir llena de muchas y grandes aspiraciones el motivo es ayudar a todas esas personas que quieren adquirir un artículo y les cuesta hacer esa compra aquí es más <button>práctica</button>, <button>sencillo</button> y de gran <button>calida</button></p>
+                </div>
+            </section>
+            <section class="container-contactanos_main" id="contactanos">
+                <h3 class="title-contactanos">sigueme en en mis redes redes sociales</h2>
+                    <div class="copyright-icon">
+                        <a href="#" class="social-icon"><img src="media/whatsapp-svgrepo-com.svg" alt="icon whatssap"></a>
+                    <a href="#" class="social-icon"><img src="media/facebook-svgrepo-com.svg"></a>
+                    <a href="#" class="social-icon"><img src="media/instagram-svgrepo-com.svg"></a>
+                        </div>
+                        <div id="msj" class="elfsight-app-e3d2258a-1161-4499-af87-adae763dbd3a"></div>
+            </section>
+        </main>
+        <footer class="footer">  
+            <button type="button"class="copyright-text">  D'von 2023©</button>
+            <button><a href="#banner">ir al principio</a></button>
+        </footer>
+    </div>
+
+    <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap'); </style>
+<style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.8/push.js" integrity="sha512-x0GVeKL5uwqADbWOobFCUK4zTI+MAXX/b7dwpCVfi/RT6jSLkSEzzy/ist27Iz3/CWzSvvbK2GBIiT7D4ZxtPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="scripts/script-gsap.js"></script>
+<script src="scripts/script-product.js"></script>
+<script src="scripts/script.js"></script>
+</body><script src="https://apps.elfsight.com/p/platform.js"></script>
+
+</html>
