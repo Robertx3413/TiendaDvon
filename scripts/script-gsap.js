@@ -12,7 +12,6 @@ tl.to(loading, {
 })
 
 tl.to(container, {
-    duration:1,
     opacity:1,
 });
 
