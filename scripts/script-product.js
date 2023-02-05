@@ -6,7 +6,7 @@ const colors = document.querySelectorAll('.color');
 const watchs = document.querySelectorAll('.img-product');
 const activo = document.querySelector(".active")
 const gradients = document.querySelectorAll('.gradient');
-const cartButtons = document.querySelectorAll('.cart-button');
+const cartButtons = document.querySelectorAll('.btn-add-cart');
 
 cartButtons.forEach(button => {
 	button.addEventListener('click', cartClick);
@@ -16,8 +16,6 @@ function cartClick() {
 	let button = this;
 	button.classList.add('clicked')
 }
-
-
 
 
 
