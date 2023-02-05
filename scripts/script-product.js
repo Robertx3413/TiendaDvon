@@ -181,9 +181,27 @@ async function display() {
     const item = await displayMsg();
 }
 
+
+
+const closeMsg= () => {
+    return new Promise((res, rej) => {
+        setTimeout(()=> {
+            res(console.log("adios"));
+        }, 5000);
+    });
+};
+
+async function close() {
+    const item = await closeMsg();
+}
+
+
 cartButtons.forEach((e)=>{
 	e.addEventListener("click",display)
+	e.addEventListener("click",close)
 })
+
+
 
 
 
