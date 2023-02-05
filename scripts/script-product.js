@@ -6,7 +6,7 @@ const colors = document.querySelectorAll('.color');
 const watchs = document.querySelectorAll('.img-product');
 const activo = document.querySelector(".active")
 const gradients = document.querySelectorAll('.gradient');
-const cartButtons = document.querySelectorAll('.cart-button');
+const cartButtons = document.querySelectorAll('.btn-add-cart');
 
 
 
@@ -129,6 +129,16 @@ const showHTML = () => {
 
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
+	
+	Push.create("Hello world!",{
+		body: "This is example of Push.js Tutorial",
+		icon: '/Logo_small.png',
+		timeout: 2000,
+		onClick: function () {
+			window.focus();
+			this.close();
+		}
+	});
 };
 
 
@@ -155,14 +165,6 @@ function mostrarColores(btn){
 
 
 
-Push.create("Hello world!",{
-	body: "This is example of Push.js Tutorial",
-	icon: '/Logo_small.png',
-	timeout: 2000,
-	onClick: function () {
-		window.focus();
-		this.close();
-	}
-});
 
-	Push.Permission.has()
+
+Push.Permission.has()
