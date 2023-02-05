@@ -6,7 +6,7 @@ const itemProducts = document.querySelectorAll(".item");
 const itemHidden = document.querySelectorAll(".item-hidden");
 const modalClose = document.querySelector(".modal__close")
 const modal = document.querySelector(".modal")
-const cartButtons = document.querySelectorAll('.btn-add-cart');
+const cartButton = document.querySelectorAll('.btn-add-cart');
 
 btnMenu.addEventListener("click", ()=>{
     
@@ -71,20 +71,21 @@ async function displayItem() {
 displayItem();
 
 
-cartButtons.forEach((e)=> {
+
+const displayMsj= () => {
+    return new Promise((res, rej) => {
+        setTimeout(()=> {
+            res(console.log("hola"));
+        }, 2000);
+    });
+};
+
+async function display() {
+    const item = await displayMsj();
+}
+
+cartButton.forEach((e)=> {
     e.addEventListener("click", ()=>{
-        const displayMsj= () => {
-            return new Promise((res, rej) => {
-                setTimeout(()=> {
-                    res(console.log("hola"));
-                }, 2000);
-            });
-        };
-        
-        async function display() {
-            const item = await displayMsj();
-        }
-        
         display();
     })
 })
