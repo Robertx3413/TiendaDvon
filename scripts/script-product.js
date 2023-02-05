@@ -153,11 +153,16 @@ function mostrarColores(btn){
 	})
 }
 
-cartButtons.forEach(button => {
-	button.addEventListener('click', cartClick);
+
+Push.Permission.has()
+
+Push.create("Hello world!",{
+	body: "This is example of Push.js Tutorial",
+	icon: '/Logo_small.png',
+	timeout: 2000,
+	onClick: function () {
+		window.focus();
+		this.close();
+	}
 });
 
-function cartClick() {
-	let button = this;
-	button.classList.add('clicked')
-}
