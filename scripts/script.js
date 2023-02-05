@@ -59,14 +59,16 @@ const displayNone= () => {
     return new Promise((res, rej) => {
         setTimeout(()=> {
             res(loading.style.display = "none");
-        }, 10000);
+        }, 2000);
     });
-
 };
 
 async function displayItem() {
     const item = await displayNone();
 }
-
 displayItem();
+
+
+
+}
 
