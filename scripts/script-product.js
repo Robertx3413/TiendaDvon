@@ -186,7 +186,7 @@ async function display() {
 const closeMsg= () => {
     return new Promise((res, rej) => {
         setTimeout(()=> {
-            res(console.log("adios"));
+            res(console.clear());
         }, 5000);
     });
 };
