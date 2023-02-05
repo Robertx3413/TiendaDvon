@@ -139,6 +139,13 @@
   text-decoration: none;
 }
 
+.container-notificacion-mobile{
+  position: fixed;
+  bottom: 0;
+  width: 20vw;
+  background-color: #585858;
+}
+
 
 .container-header{
     width: 100%;

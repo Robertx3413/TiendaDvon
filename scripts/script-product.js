@@ -7,6 +7,7 @@ const watchs = document.querySelectorAll('.img-product');
 const activo = document.querySelector(".active")
 const gradients = document.querySelectorAll('.gradient');
 const cartButtons = document.querySelectorAll('.btn-add-cart');
+const msj = document.querySelector(".container-notificacion-mobile");
 
 
 
@@ -172,7 +173,7 @@ cartButtons.forEach((e) => {
 const displayMsg= () => {
     return new Promise((res, rej) => {
         setTimeout(()=> {
-            res(console.log("hola"));
+            res(msj.style.display = "block");
         }, 2000);
     });
 };
@@ -181,12 +182,10 @@ async function display() {
     const item = await displayMsg();
 }
 
-
-
 const closeMsg= () => {
     return new Promise((res, rej) => {
         setTimeout(()=> {
-            res(console.clear());
+            res(msj.style.display = "none");
         }, 5000);
     });
 };
