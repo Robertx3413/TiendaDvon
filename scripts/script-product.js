@@ -155,16 +155,19 @@ function mostrarColores(btn){
 
 Push.Permission.has()
 
-cartButtons.addEventListener("click", ()=>{
-	Push.create("Hello world!",{
-		body: "This is example of Push.js Tutorial",
-		icon: 'media/Logo1.png',
-		timeout: 2000,
-		onClick: function () {
-			window.focus();
-			this.close();
-		}
-	});
+
+cartButtons.forEach((e) => {
+	e.addEventListener("click", ()=>{
+		Push.create("Hello world!",{
+			body: "This is example of Push.js Tutorial",
+			icon: 'media/Logo1.png',
+			timeout: 2000,
+			onClick: function () {
+				window.focus();
+				this.close();
+			}
+		});
+	})
 })
 
 
