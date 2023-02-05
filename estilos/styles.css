@@ -146,8 +146,10 @@
   right: 0;
   left: 0;
   padding:20px;
-  background-color: #5858584f;
-  transition: all 1s ease-in-out;
+  background-color: #0000008c;
+  text-align: center;
+  font-size: 1em;
+  transition: all 1.5s ease-in-out;
 }
 
 
