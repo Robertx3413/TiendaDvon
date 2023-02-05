@@ -155,18 +155,6 @@ function mostrarColores(btn){
 
 Push.Permission.has()
 
-const displaymsj= () => {
-    return new Promise((res, rej) => {
-        setTimeout(()=> {
-            res(console.log("hola"));
-        }, 2000);
-    });
-};
-
-async function display() {
-    const item = await displaymsj();
-
-
 cartButtons.forEach((e) => {
 	e.addEventListener("click", ()=>{
 		Push.create("Hello world!",{
