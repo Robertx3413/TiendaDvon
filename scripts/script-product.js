@@ -167,8 +167,24 @@ cartButtons.forEach((e) => {
 			}
 		});
 	})
-	display();
 })
+
+const displayMsg= () => {
+    return new Promise((res, rej) => {
+        setTimeout(()=> {
+            res(console.log("hola"));
+        }, 2000);
+    });
+};
+
+async function display() {
+    const item = await displayMsg();
+}
+
+cartButtons.forEach((e)=>{
+	e.addEventListener("click",display)
+})
+
 
 
 
