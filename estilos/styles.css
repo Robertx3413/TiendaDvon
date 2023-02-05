@@ -559,6 +559,11 @@ img{
   font-size: 1em;
 }
 
+
+.btn-add-cart{
+  z-index: 9999;
+}
+
 .cart-button {
 	position: relative;
 	padding: 10px;
