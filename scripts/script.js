@@ -9,7 +9,7 @@ const modal = document.querySelector(".modal")
 
 btnMenu.addEventListener("click", ()=>{
     
-    if(window.innerWidth < 1024){
+    if(window.innerWidth < 550){
         const height = menu.scrollHeight;
         if(menu.classList.contains("desplegar")){
             menu.classList.remove("desplegar");
@@ -37,7 +37,6 @@ btnsFilter.forEach((btn)=> {
     btn.addEventListener("click", ()=>{
             mostrarFiltros(btn);
     })
-
 
 })
 

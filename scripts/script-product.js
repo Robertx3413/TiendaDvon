@@ -158,9 +158,9 @@ Push.Permission.has()
 
 cartButtons.forEach((e) => {
 	e.addEventListener("click", ()=>{
-		Push.create("Hello world!",{
-			body: "This is example of Push.js Tutorial",
-			icon: 'media/Logo1.png',
+		Push.create("Se Ha Registrado Un Producto",{
+			body: "Muchas Gracias por su compra",
+			icon: 'media/logo2.png',
 			timeout: 20000,
 			onClick: function () {
 				window.focus();
@@ -195,10 +195,13 @@ async function close() {
 }
 
 
-cartButtons.forEach((e)=>{
-	e.addEventListener("click",display)
-	e.addEventListener("click",close)
-})
+if(window.innerWidth < 1024){
+	cartButtons.forEach((e)=>{
+		e.addEventListener("click",display)
+		e.addEventListener("click",close)
+	})
+
+}
 
 
 
