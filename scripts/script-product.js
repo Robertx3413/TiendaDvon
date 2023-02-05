@@ -8,14 +8,6 @@ const activo = document.querySelector(".active")
 const gradients = document.querySelectorAll('.gradient');
 const cartButtons = document.querySelectorAll('.cart-button');
 
-cartButtons.forEach(button => {
-	button.addEventListener('click', cartClick);
-});
-
-function cartClick() {
-	let button = this;
-	button.classList.add('clicked')
-}
 
 
 
@@ -159,4 +151,13 @@ function mostrarColores(btn){
 			   e.classList.remove("show")
 			}
 	})
+}
+
+cartButtons.forEach(button => {
+	button.addEventListener('click', cartClick);
+});
+
+function cartClick() {
+	let button = this;
+	button.classList.add('clicked')
 }
