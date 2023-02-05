@@ -174,7 +174,7 @@ const displayMsg= () => {
     return new Promise((res, rej) => {
         setTimeout(()=> {
             res(msj.style.display = "block");
-        }, 2000);
+        }, 1000);
     });
 };
 
@@ -186,7 +186,7 @@ const closeMsg= () => {
     return new Promise((res, rej) => {
         setTimeout(()=> {
             res(msj.style.display = "none");
-        }, 5000);
+        }, 3000);
     });
 };
 

@@ -140,12 +140,14 @@
 }
 
 .container-notificacion-mobile{
+  display: none;
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
-  padding:12px;
-  background-color: #585858;
+  padding:20px;
+  background-color: #5858584f;
+  transition: all 1s ease-in-out;
 }
 
 
