@@ -154,7 +154,6 @@ function mostrarColores(btn){
 }
 
 
-Push.Permission.has()
 
 Push.create("Hello world!",{
 	body: "This is example of Push.js Tutorial",
@@ -166,3 +165,4 @@ Push.create("Hello world!",{
 	}
 });
 
+	Push.Permission.has()
