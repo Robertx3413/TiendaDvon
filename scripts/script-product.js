@@ -161,7 +161,7 @@ cartButtons.forEach((e) => {
 		Push.create("Hello world!",{
 			body: "This is example of Push.js Tutorial",
 			icon: 'media/Logo1.png',
-			timeout: 1000,
+			timeout: 2000,
 			onClick: function () {
 				window.focus();
 				this.close();
